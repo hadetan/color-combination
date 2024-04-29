@@ -1,0 +1,451 @@
+@font-face {
+    font-family: digital;
+    src: url(./fonts/Digital.ttf);
+}
+@font-face {
+    font-family: neue haas grotesk pro;
+    src: url(./fonts/Neue\ Haas\ Grotesk\ Text\ Pro.ttf);
+}
+@font-face {
+    font-family: scto;
+    src: url(./fonts/Scto\ Grotesk\ A\ Medium.ttf);
+}
+@font-face {
+    font-family: ogg;
+    src: url(./fonts/Ogg.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: black; */
+    font-family: neue haas grotesk pro;
+    /* overflow-y: hidden; */
+}
+body{
+    overflow-x: hidden;
+    pointer-events: none;
+}
+#main{
+    width: 100%;
+}
+#home{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* overflow: hidden; */
+}
+#home #bgimg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-fit: cover;
+    overflow: hidden;
+    /* scale: 1.2; */
+}
+#home #circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65vw;
+    height: 65vw;
+    border-radius: 50%;
+    z-index: 99;
+    /* background-color: #fff; */
+}
+#circle img{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#top{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+#top img{
+    transform: translate(-50%, -50%) rotate(-180deg);
+}
+#btm{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+}
+#btm img:nth-child(1){
+    transform: translate(-50%, -50%) scale(2);
+}
+#btm img:nth-child(2){
+    transform: translate(-50%, -50%) scale(1.5);
+}
+#btm img:nth-child(3){
+    transform: translate(-50%, -50%) scale(1);
+}
+#top img:nth-child(1){
+    transform: translate(-50%, -50%) rotate(-180deg) scale(2);
+}
+#top img:nth-child(2){
+    transform: translate(-50%, -50%) rotate(-180deg) scale(1.5);
+}
+#top img:nth-child(3){
+    transform: translate(-50%, -50%) rotate(-180deg) scale(1);
+}
+#black{
+    position: absolute;
+    left: 0%;
+    height: 100vh;
+    width: 100vw;
+    z-index: 999;
+    background-color: black;
+    display: flex;
+}
+/* #black #left{
+    position: absolute;
+    right: 0%;
+    width: 50%;
+    height: 100%;
+    background-color: #000;
+}
+#black #right{
+    position: absolute;
+    left: 0%;
+    width: 50%;
+    height: 100%;
+    background-color: #000;
+} */
+#overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#smcircle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45vw;
+    height: 45vw;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 99;
+}
+#overlay #nav, #second #nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 9999;
+    padding: 3vw 10vh;
+}
+#nav h1{
+    font-size: 1.5vw;
+    line-height: 1;
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+}
+#right-nav{
+    width: 6.5vw;
+    height: 5vh;
+    /* background-color: red; */
+    
+}
+#grade{
+    width: 6.5vw;
+    height: 2vh;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row-reverse;
+}
+#box1{
+    /* width: 10px; */
+    height: 100%;
+    background: rgb(000, 000, 000);
+    flex: 1;
+}
+#box2{
+    /* width: 10px; */
+    flex: 1;
+    height: 100%;
+    background: rgb(42.5, 42.5, 42.5);
+}
+#box3{
+    /* width: 10px; */
+    flex: 1;
+    height: 100%;
+    background: rgb(85, 85, 85);
+}
+#box4{
+    /* width: 10px; */
+    flex: 1;
+    height: 100%;
+    background: rgb(127.5, 127.5, 127.5);
+}
+#box5{
+    /* width: 10px; */
+    flex: 1;
+    height: 100%;
+    background: rgb(170, 170, 170);
+}
+#box6{
+    /* width: 10px; */
+    flex: 1;
+    height: 100%;
+    background: rgb(212.5, 212.5, 212.5);
+}
+#gallery{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-family: digital;
+    font-size: 1.4vw;
+    color: rgb(127.5, 127.5, 127.5);
+}
+#overlay #btmnav, #second #btmnav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 90%;
+    transform: translate(-0%, -50%);
+    z-index: 999;
+    padding: 3vw 10vh;
+}
+#btmnav img{
+    width: 100px;
+}
+#centerimg{
+    width: 27vw;
+    position: absolute;
+    top: 45%;
+    left: 87%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+#centertxt{
+    /* position: absolute; */
+    /* top: -20%; */
+    right: 30%;
+}
+#centerimg h5{
+    /* position: absolute; */
+    margin-right: 50vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+#centerimg #cimage{
+    position: relative;
+    width: 100%;
+    height: 15vw;
+    /* overflow: hidden; */
+}
+#cimage img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover; */
+}
+#overlay #hidden h1{
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(-30deg);
+    transform-origin: 50% 0%;
+    z-index: 99999999;
+    font-size: 12vw;
+    font-weight: 400;
+    color: rgb(42.5, 42.5, 42.5);
+    letter-spacing: 1;
+}
+#overlay #pinkc{
+    width: 5vw;
+    height: 5vw;
+    background-color: #D5A7B4;
+    border-radius: 50%;
+    z-index: 999999999;
+    position: absolute;
+    left: 50%;
+    top: 120%;
+    transform: translate(-50%, -50%);
+}
+#overlay #hidden2 h1{
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(30deg);
+    transform-origin: 0% 50%;
+    z-index: 9999999;
+    font-size: 8.5vw;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 1;
+}
+#overlay #hidden2 span{
+    color: #ffcad9;
+
+}
+#info{
+    position: absolute;
+    left: 0;
+    bottom: -150%;
+    transform: translate(0%, -50%);
+    z-index: 999;
+    background-color: #D5A7B4;
+    width: 32%;
+    height: 70%;
+}
+#info h3{
+    font-size: 1.8vh;
+    color: #fff;
+    font-weight:lighter;
+    font-family: scto;
+}
+#info #infos{
+    width: 100%;
+    height: 60%;
+    margin: 26vh 0 0 4vw;
+}
+#infos>h3{
+    padding-bottom: 2vh;
+}
+#infos #info-text{
+    padding-left: 2vw;
+}
+#infos #info-text2{
+    padding-bottom: 2vh;
+}
+#infos #code{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15vh;
+}
+#infos #code sup{
+    font-size: 0.8vw;
+    font-family: neue haas grotesk pro;
+    font-weight: 600;
+}
+#infos #code h3{
+    font-size: 2.5vw;
+    font-family: digital;
+}
+#main2{
+    width: 100%;
+}
+#second{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#s-top{
+    position: relative;
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+}
+#s-top>h1{
+    position: absolute;
+    bottom: 0%;
+    line-height: 1;
+    left: 100%;
+    font-size: 20vw;
+    font-weight: 100;
+}
+.s-circle{
+    position: absolute;
+    top: 150%;
+    transform: translate(-50%, -50%);
+    width: 14vw;
+    height: 14vw;
+    border-radius: 50%;
+}
+#s-top .pi{
+    left: 45%;
+    background-color: #D5A7B4;
+    z-index: 1;
+}
+#s-top .pu{
+    left: 55%;
+    background-color: #B4AAD5;
+}
+#s-btm{
+    width: 100%;
+    height: 40%;
+    position: relative;
+    border-top: 0.2vh solid #ffffff;
+}
+#second #s-bottom-content{
+    width: 100%;
+    height: 70%;
+    border-bottom: 0.2vh solid #dadada;
+}
+#s-btm p:nth-child(1){
+    width: 100%;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 3.3vw;
+    font-weight: 500;
+    line-height: 1;
+}
+#s-btm p:nth-child(2){
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 3.4vw;
+    font-weight: 500;
+    line-height: 1;
+}
+#left-n{
+    margin-top: 9vh;
+    margin-left: 3.8vw;
+    width: 4vw;
+    height: 4vw;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#left-n h1{
+    font-size: 3VW;
+    font-family: digital;
+}
+#left-n h1:nth-child(1){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+#left-n h1:nth-child(2){
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
